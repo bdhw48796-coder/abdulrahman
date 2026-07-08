@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html basics</title>
+</head>
+<body style="background-color: #9c9c9c; color: white; font-family: Arial, sans-serif; line-height: 1.6;">
+    <h1 style="color: blue;">HTML Basics</h1>
+    <p style="font-size: 18px;">
+        HTML (Hypertext Markup Language) is the standard markup language for creating web pages. It provides the structure and content of a webpage, allowing developers to define headings, paragraphs, links, images, and other elements.
+        and it is used to create the structure and content of web pages. HTML consists of a series of elements represented by tags, which define the different parts of a webpage. These elements can include headings, paragraphs, lists, links, images, forms, and more.
+    </p>
+    <h2>HTML Elements</h2>
+    <p>HTML elements are the building blocks of a webpage. They are represented by tags, which are enclosed in angle brackets. Each element typically consists of an opening tag, content, and a closing tag. For example, the <p> element is used to define a paragraph:</p>
+    <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt</code></pre>
+    <p>HTML elements can also have attributes, which provide additional information about the element. For example, the <a> element is used to create hyperlinks, and it can have an href attribute that specifies the URL of the linked page:</p>
+    <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+    <h2>HTML Structure</h2>
+    <p>HTML documents follow a specific structure that includes a doctype declaration, an html element, a head element, and a body element:</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    <p>The doctype declaration specifies the HTML version being used. The html element is the root element that wraps the entire document. The head element contains meta information, such as the character encoding and title of the page. The body element contains the visible content of the webpage.</p>
+    <h2>HTML Headings</h2>
+    <p>HTML provides six levels of headings, from <h1> to <h6>, with <h1> being the highest level and <h6> being the lowest. Headings are used to structure the content of a webpage and provide a hierarchy of information. For example:</p>
+    <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+</code></pre>
+    <p>Headings are important for accessibility and search engine optimization (SEO), as they help users and search engines understand the structure and content of a webpage.</p>
+    <h2>HTML Paragraphs</h2>
+    <p>HTML paragraphs are defined using the <p> element. Paragraphs are used to group related sentences together and create blocks of text. For example:</p>
+    <pre><code>&lt;p&gt;This is the first paragraph.&lt;/p&gt;
+&lt;p&gt;This is the second paragraph.&lt;/p&gt;</code></pre>
+    <p>Paragraphs can also contain other inline elements, such as links, images, and formatting tags. For example:</p>
+    <pre><code>&lt;p&gt;This is a paragraph with a &lt;a href="https://www.example.com"&gt;link&lt;/a&gt; and an &lt;em&gt;emphasized&lt;/em&gt; word.&lt;/p&gt;</code></pre>
+    <h2>HTML Lists</h2>
+    <p>HTML provides two types of lists: ordered lists and unordered lists. Ordered lists are used to create numbered lists, while unordered lists are used to create bulleted lists. For example:</p>
+    <pre><code>&lt;h3&gt;Ordered List&lt;/h3&gt;
+&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+    <h3>Unordered List</h3>
+    <pre><code>&lt;ul&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+    <p>Lists can also be nested, allowing for the creation of hierarchical structures. For example:</p>
+    <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2
+        &lt;ul&gt;
+            &lt;li&gt;Subitem 2.1&lt;/li&gt;
+            &lt;li&gt;Subitem 2.2&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    <h2>HTML Tables</h2>
+    <p>HTML tables are used to display tabular data in rows and columns. Tables are defined using the <table> element, with rows represented by the <tr> element and cells represented by the <td> (data cell) and <th> (header cell) elements. For example:</p>
+    <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;
+        &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<h2>HTML Forms</h2>
+    <p>HTML forms are used to collect user input and submit it to a server for processing. Forms are defined using the <form> element, with various input elements such as text fields, checkboxes, radio buttons, and submit buttons. For example:</p>
+    <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+<h2>HTML Images</h2>
+    <p>HTML images are used to display pictures and graphics on a webpage. Images are defined using the <img> element, which requires the src attribute to specify the image source and the alt attribute to provide alternative text for accessibility. For example:</p>
+    <pre><code>&lt;img src="image.jpg" alt="Description of the image"&gt;</code></pre>
+    <p>Images can also have additional attributes such as width and height to control their size, as well as CSS styles for further customization.</p>
+    <h2>HTML Multimedia</h2>
+    <p>HTML supports multimedia elements such as audio and video, allowing developers to embed media content directly into webpages. The <audio> and <video> elements are used for this purpose, with attributes to control playback, volume, and other settings. For example:</p>
+    <pre><code>&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;</code></pre>
+    <pre><code>&lt;video width="320" height="240" controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</code></pre>
+<h2>HTML Semantic Elements</h2>
+    <p>HTML5 introduced semantic elements that provide meaning to the structure of a webpage. These elements help improve accessibility and search engine optimization (SEO) by clearly defining the purpose of different sections of content. Some common semantic elements include:</p>
+    <ul>
+        <li><header>: Represents the introductory content or a group of navigational links.</li>
+        <li><nav>: Represents a section of navigation links.</li>
+        <li><main>: Represents the main content of the document.</li>
+        <li><section>: Represents a thematic grouping of content.</li>
+        <li><article>: Represents a self-contained piece of content, such as a blog post or news article.</li>
+        <li><aside>: Represents content that is tangentially related to the main content, such as sidebars or pull quotes.</li>
+        <li><footer>: Represents the footer of a document or section, typically containing copyright information or links.</li>
+    </ul>
+    <p>Using semantic elements helps create a more meaningful and accessible web experience for users and search engines alike.</p>
+    <h2>That's All!</h2>
+    <p>Thank you for reading this guide to HTML. I hope you found it informative and helpful!</p>
+    <p>For more information and resources on HTML, you can visit the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs</a> or the <a href="https://www.w3schools.com/html/">W3Schools HTML Tutorial</a>.</p>
+    <h2 style="color: aquamarine;"><em>Abdulrahman Waleed</em></h2>
+
+</body>
+</html>
