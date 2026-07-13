@@ -1,0 +1,42 @@
+* {
+    margin:0%;
+    padding: 0%;
+    box-sizing:border-box;
+    background-color:rgba(160, 232, 232, 0.138);
+}
+.card {
+    background-color: rgb(46, 101, 83);
+    max-width:fit-content ;
+    max-height: fit-content;
+    margin: 48px auto;
+    padding: 10px;
+    text-align: center;
+    border: 5px inset aliceblue;
+    box-shadow: none;
+
+}
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    cursor: not-allowed;
+}
+.card button {
+    width: 5rem;
+    height: 30px;
+    background-color:aliceblue;
+    border-style: hidden;
+    cursor: pointer;
+}
+.card button:hover{
+    width: 6rem;
+    height: 35px;
+    background-color:blue;
+    border-style: hidden;
+}
+.card p, h1, h2 {
+    background-color:rgb(40, 96, 80);
+    font-weight: 400px;
+    line-height: 40px;
+
+}
