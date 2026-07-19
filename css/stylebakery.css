@@ -122,6 +122,7 @@
     text-align: center;
     display: grid;
     grid-template-columns: repeat(5,20%);
+    
     /*grid-template-rows: repeat(2,41vh);*/
     /*justify-content: center;*/
     /*display: flex;
