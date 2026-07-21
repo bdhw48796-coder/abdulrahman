@@ -26,9 +26,9 @@ console.log(myProfile.skill(2));
 function calcSumNum(num){
     var result=0;
     for (var i=1;i<num;i++){
-        num=i;
+        num+=i;
     }
-    result=num;
+    result+=num;
     console.log(`result = ${result}`);
     
 }
